@@ -51,10 +51,10 @@
                     <!-- /.user-block -->
                     <p>
                       <i class="fas fa-fw fa-building"></i>Address :  <br>{{ $order->deliveryAddress->full_name }},
-                      {{ $order->deliveryAddress->full_name }}, {{ $order->deliveryAddress->full_name }}<br>
-                      {{ $order->deliveryAddress->full_name }}, {{ $order->deliveryAddress->full_name }} 
+                      {{ $order->deliveryAddress->house_name }}, {{ $order->deliveryAddress->street }}<br>
+                      {{ $order->deliveryAddress->city }}, {{ $order->deliveryAddress->pincode }} 
                       <br>
-                      <i class="fas fa-fw fa-phone"></i>Phone : {{ $order->deliveryAddress->full_name }}
+                      <i class="fas fa-fw fa-phone"></i>Phone : {{ $order->deliveryAddress->mobile }}
                     </p>
                     
                   </div>
