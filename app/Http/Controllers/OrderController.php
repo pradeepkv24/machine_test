@@ -17,7 +17,8 @@ class OrderController extends Controller
      */
     public function index()
     {
-        $orders = Order::latest()->paginate(10);
+        $customerId = Auth::user()->id; 
+        $orders = Order::where('customer_id',$customerId)->latest()->paginate(10);
             $data=array(
            'orders' => $orders,
            'i'=> (request()->input('page', 1) - 1) * 10,

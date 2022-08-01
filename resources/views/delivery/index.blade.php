@@ -93,6 +93,7 @@
                 
             </tbody>
         </table>
+        {!! $orders->links() !!}
       </div>
       <!-- /.card-body -->
     </div>
